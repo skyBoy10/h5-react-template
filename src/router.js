@@ -10,7 +10,7 @@ function RouterConfig({ history, app }) {
         component: dynamic({
           app,
           models: () => [ import('./models/example') ],
-          component: () => import('./page/IndexPage'),
+          component: () => import('./page/IndexPage.jsx'),
         }),
         isExact: true,
         isHasChild: false,

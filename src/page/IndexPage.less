@@ -1,7 +1,16 @@
 .container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    .col {
+        float: left;
+        height: inherit;
+        width: 30%;
+
+        &:last-child {
+            width: auto;
+            float: none;
+            overflow: hidden;
+            background-color: aqua;
+        }
+    }
 }

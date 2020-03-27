@@ -10,7 +10,11 @@ class index extends Component {
 
   render() {
     return (
-      <div className={styles.container}>hello, wolrd</div>
+      <div className={styles.container}>
+        <div className={styles.col}>第一列</div>
+        <div className={styles.col}>第二列</div>
+        <div className={styles.col}>第三列</div>
+      </div>
     );
   }
 }
