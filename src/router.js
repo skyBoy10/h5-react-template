@@ -15,6 +15,17 @@ function RouterConfig({ history, app }) {
         isExact: true,
         isHasChild: false,
     },
+    {
+      path: '/report',
+      name: 'report',
+      component: dynamic({
+        app,
+        models: () => [],
+        component: () => import('./page/psychologicalTest/Report'),
+      }),
+      isExact: true,
+      isHasChild: false,
+  },
   ];
 
   /** 

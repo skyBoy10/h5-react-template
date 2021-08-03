@@ -4,4 +4,5 @@ export default {
       ENV: process.env.ENV || 'dev',
     }
   },
+  'disableCSSModules': true,
 }

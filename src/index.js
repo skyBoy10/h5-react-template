@@ -1,6 +1,7 @@
 import dva from 'dva';
 import createLoading from 'dva-loading';
 import './index.css';
+import './utils/mockApi';
 
 import './utils/adaptation';
 

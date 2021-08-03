@@ -1,0 +1,49 @@
+@prefix: ~'TK-AnnularChart-20200923';
+@cFontSize: 0.14rem;
+
+.@{prefix}-container {
+  position: relative;
+  
+  .@{prefix}-show {
+    position: absolute;
+    color: #333;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > div:nth-child(1) {
+      margin: 0 0 0.07rem 0;
+    }
+
+    .@{prefix}-my {
+      font-size: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      line-height: 0.5rem;
+
+      & > span:nth-child(1) {
+        font-size: 0.64rem;
+        font-weight: 500;
+        margin: 0 0.05rem 0 0;
+      }
+
+      & > span:nth-child(2) {
+        line-height: 0.2rem;
+      }
+    }
+
+    .@{prefix}-average {
+      width: 100%;
+      white-space: nowrap;
+      color: #666;
+      font-size: 0.16rem;
+      text-align: center;
+    }
+  }
+}

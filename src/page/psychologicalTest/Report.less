@@ -1,0 +1,94 @@
+@prefix: ~'TK-Report-20200923';
+@cFontSize: 0.14rem;
+
+.@{prefix}-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  color: #fff;
+  background-color: #0080FC;
+  font-size: @cFontSize;
+
+  .@{prefix}-first {
+    background-image: url(https://web-data.zmlearn.com/image/pjwN5SEoinKK5n51Yz62Fs/test_top_bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    padding-top: 1.65rem;
+  }
+
+  .@{prefix}-info {
+    padding: 0.16rem;
+    box-sizing: border-box;
+    background: linear-gradient(168deg, #5CD4FE 0%, #00A2FF 100%);
+    border: 1px solid;
+    border-image: linear-gradient(133deg, rgba(0, 252, 255, 0.22), rgba(0, 247, 255, 0.33)) 1 1;
+    border-radius: 0.12rem;
+    margin: 0 0.16rem;
+
+    .@{prefix}-brief {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > div:nth-child(2) {
+        margin: 0 0.14rem;
+        font-weight: 600;
+        font-size: 0.18rem;
+      }
+  
+      & > div:nth-child(3) {
+        font-size: @cFontSize;
+      }
+  
+      .@{prefix}-img {
+        img {
+          width: 0.48rem;
+          height: 0.48rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .@{prefix}-eval-result {
+      font-weight: 600;
+      margin: 0 0 0.08rem 0;
+    }
+
+    .@{prefix}-evaluation {
+      line-height: 0.22rem;
+      font-weight: 400;
+    }
+  }
+
+  .@{prefix}-tabs {
+    height: 0.75rem;
+    background-color: #0080FC;
+  }
+
+  .@{prefix}-body {
+    padding: 0 0.2rem 0 0.2rem;
+
+    .@{prefix}-bottom {
+      margin: 0 0 0.3rem 0;
+    }
+  }
+
+  .@{prefix}-foot {
+    padding: 0.2rem 0 0.3rem 0;
+    text-align: center;
+    color: #CDECFF;
+    font-size: 0.13rem;
+  }
+
+  .@{prefix}-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}

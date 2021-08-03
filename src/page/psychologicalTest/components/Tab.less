@@ -1,0 +1,42 @@
+@prefix: ~'TK-Tab-20200923';
+@cFontSize: 0.14rem;
+
+.@{prefix}-container {
+  padding: 0.2rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #90C5FF;
+  background-color: #0080FC;
+  font-size: @cFontSize;
+
+  .@{prefix}-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .@{prefix}-active {
+    position: relative;
+    font-size: 0.18rem;
+    font-weight: 500;
+    color: #fff;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 0.04rem;
+      width: 0.6rem;
+      background-color: #FFB500;
+      border-radius: 0.1rem;
+      opacity: 0.8;
+    }
+  }
+}

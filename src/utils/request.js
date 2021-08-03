@@ -6,9 +6,9 @@ import config from './config';
  * @param {*} res
  */
 const checkCode = res => {
-    const { data: { errorCode } } = res;
+    const { data: { code } } = res;
 
-    if (+errorCode !== 0) {
+    if (+code !== 0) {
         return false;
     }
 
@@ -45,7 +45,7 @@ axios.interceptors.response.use(res => {
     const isValidate = checkCode(res);
 
     if (isValidate) {
-        return Promise.resolve(res);
+        return Promise.resolve(res.data);
     }
 
     return Promise.reject(res);
